@@ -39,7 +39,7 @@ export default function Home() {
           priority
         /> 
       </div>*/}
-        <Link href='/openings'>Job Listing</Link>
+        <Link href='/jobs'>Job Listing</Link>
 
       <div className={styles.grid}>
         <a

@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 
 
-const New = async() => {
+const Jobs = async() => {
 
     const  response = await getJobList()
 
@@ -18,7 +18,7 @@ const New = async() => {
                 return(
                     <div style={{display:"flex",flexDirection:"column"}}key={i}>
 
-                        <Link href={`/new/${data?.slug}`} >{data?.slug}</Link>
+                        <Link href={`/jobs/${data?.slug}`} >{data?.slug}</Link>
                     </div>
                 )
             })
@@ -27,4 +27,4 @@ const New = async() => {
   )
 }
 
-export default New
+export default Jobs
