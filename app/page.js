@@ -1,10 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      {/* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.js</code>
@@ -36,8 +37,9 @@ export default function Home() {
           width={180}
           height={37}
           priority
-        />
-      </div>
+        /> 
+      </div>*/}
+        <Link href='/openings'>Job Listing</Link>
 
       <div className={styles.grid}>
         <a
